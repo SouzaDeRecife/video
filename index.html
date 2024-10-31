@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital | Feitosa de Souza</title>
+</head>
+
+
+<style>
+* {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+
+.clock {
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 50px;
+    span:not(:last-child):after {
+    content: ':';
+    color: white;
+    margin-left: 25px;
+    span::after {
+    content: ':';
+}
+}
+
+
+}
+.h2 {
+    background-color: black;
+    height: 50vh;
+    color: white;
+}
+
+
+.h2 strong {
+    color: blueviolet;
+    height: 50vh;
+}
+
+
+.navegar {
+    height: 50vh;
+}
+
+
+.relogiodigital {
+   margin: 10px;     
+}
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+    background-color: aquamarine;
+}
+
+
+a:hover{
+    text-decoration: none;
+    color: aquamarine;
+    background-color: black;
+}
+
+
+.somnobotao {
+    transition: all 3s linear;
+}
+
+</style>
+
+
+<body>
+<div class="clock">
+        <span id="hours">00</span>
+        <span id="minutes">00</span>
+        <span id="seconds">00</span>
+</div>   
+<script>
+const hoursElement = document.getElementById('hours')
+const minutesElement = document.getElementById('minutes')
+const secondsElement = document.getElementById('seconds')
+function newtime(){
+const date = new Date();
+const hours = date.getHours()
+const minutes = date.getMinutes()
+const seconds = date.getSeconds()
+hoursElement.textContent = fixTime(hours)
+minutesElement.textContent = fixTime(minutes)
+secondsElement.textContent = fixTime(seconds)
+}
+function fixTime(time){
+    return time < 10 ? '0'+time : time
+}
+newtime()
+setInterval(newtime, 1000)
+</script>
+
+
+<div class="h2">
+<h2>Powered by <strong>Feitosa de Souza</strong></h2>
+</div>
+<br></br>
+
+
+<video id="vid" width= 200px>
+        <source src="VID_2024-08-08-21-10-01-175.mp4">
+</video>
+
+<div class= botoesclasse display= block>
+        <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="pause()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="stop()"><img src= "images (3).jpeg" height= "20px"></button>
+        <button type="button" onclick="skip(-10)"><img src= "images (3).jpeg" height= "20px"></button>
+</div>
+    <script>
+        var video;
+        video= document.getElementById("vid");
+        
+        function play(){
+        video.play();
+        }
+        function pause(){
+        video.pause();
+    }
+        function stop(){
+            video.pause();
+            video.currentTime= 0;
+        }
+        function skip(10){
+            video.currentTime += 10;
+        }
+            
+        </script>
+
+<br></br>
+<div>
+<a href="#Desce">Desce pro fim da página.</a>
+<br></br>
+<a href="#segunda">Descer para a segunda explicação sobre link.</a>
+</div>
+<br></br>
+<br></br>
+
+
+<h1>Aplicativo Calculadora</h1>
+
+
+<button class="somnobotao">
+<a href="https://souzaderecife.github.io/calculadora/"><button id="somdobotao" onclick="audio.play();"><img src="desenho-de-adesivo-com-calculadora-isolada_1308-60994.png" height="300px"></button></a>
+</button>
+<script type="text/javascript">
+    const audio = new Audio();
+    audio.src = "depositphotos_633223380-track-sound-effect-space-laser-gun.mp3";
+</script>
+
+
+<audio id="meuaudio">
+<source src="depositphotos_633223380-track-sound-effect-space-laser-gun.mp3" type="audio/mpeg">
+</audio><br><br>
+<script>
+    function playAudio() {
+        let x = document.getElementById("meuaudio");
+        x.play();
+    }
+</script>
+
+
+<div class="navegar">
+<h2><a name="Desce">Sobe.</a></h2>
+Esse link é para navegação dentro da página.
+</div>
+
+<h2><a name="segunda">Sobe.</a></h2>
+Essa é a segunda explicação sobre link.
+
+</body>
+</html>
