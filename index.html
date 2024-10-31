@@ -120,7 +120,9 @@ setInterval(newtime, 1000)
         <button type="button" onclick="play()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="pause()"><img src= "images (3).jpeg" height= "20px"></button>
         <button type="button" onclick="stop()"><img src= "images (3).jpeg" height= "20px"></button>
-        <button type="button" onclick="skip(-10)"><img src= "images (3).jpeg" height= "20px"></button>
+<button type="button" onclick="inc()"><img src= "images (3).jpeg" height= "20px"></button>
+<button type="button" onclick="dec()"><img src= "images (3).jpeg" height= "20px"></button>
+<button type="button" onclick="retroceder()"><img src= "images (3).jpeg" height= "20px"></button>
 </div>
     <script>
         var video;
@@ -135,6 +137,15 @@ setInterval(newtime, 1000)
         function stop(){
             video.pause();
             video.currentTime= 0;
+        }
+        function inc(){
+            video.playbackRate += 0.10;
+    }
+            function dec(){
+            video.playbackRate -= 0.10;
+    }
+        function retroceder(){
+            video.currentTime -= 10;
         }
                    
         </script>
