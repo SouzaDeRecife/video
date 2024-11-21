@@ -193,23 +193,23 @@ setInterval(newtime, 1000)
         }
 </script>
 
-    <div class="titulo2">
-<video id="vid2" width= 200px poster= "procurado.png">
+    <div class="titulo">
+<video id="vid" width= 200px poster= "procurado.png">
 
     <source src="km_20241110_720p_30f_20241110_182722.mp4">
 <poster= "procurado.png">
     poster= "procurado.png"
 </video>
 
-<div class= conteiner2>
-<div class= botoesclasse2 display= block>
-        <button class= botao2 type="button" onclick="play2()"><img src= "play.png" height= "20px"></button>
-        <button class= botao2 type="button" onclick="pause2()"><img src= "Pause.png" height= "20px" padding= 5px></button>
-        <button class= botao2 type="button" onclick="stop2()"><img src= "stop.png" height= "20px" padding: 5px></button>
-<button class= botao2 type="button" onclick="inc2()"><img src= "FF.png" height= "20px" padding: 5px></button>
-<button class= botao2 type="button" onclick="dec2()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
-<button class= botao2 type="button" onclick="retroceder2()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
-    <button class= botao2 type="button" onclick="avancar2()"><img src= "avancar.png" height= "20px" padding: 5px></button>
+<div class= conteiner>
+<div class= botoesclasse display= block>
+        <button class= botao type="button" onclick="play2()"><img src= "play.png" height= "20px"></button>
+        <button class= botao type="button" onclick="pause2()"><img src= "Pause.png" height= "20px" padding= 5px></button>
+        <button class= botao type="button" onclick="stop2()"><img src= "stop.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="inc2()"><img src= "FF.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="dec2()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="retroceder2()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
+    <button class= botao type="button" onclick="avancar2()"><img src= "avancar.png" height= "20px" padding: 5px></button>
 </div>
 </div>
 </div>
@@ -217,29 +217,29 @@ setInterval(newtime, 1000)
   
 
         <script>
-        var video2;
+        var video;
         video= document.getElementById("vid2");
         
-        function play2(){
+        function play(){
         video.play();
         }
-        function pause2(){
+        function pause(){
         video.pause();
     }
-        function stop2(){
+        function stop(){
             video.pause();
             video.currentTime= 0;
         }
-        function inc2(){
+        function inc(){
             video.playbackRate += 0.10;
     }
-            function dec2(){
+            function dec(){
             video.playbackRate -= 0.10;
     }
-        function retroceder2(){
+        function retroceder(){
             video.currentTime -= 1;
         }
-        function avancar2(){
+        function avancar(){
             video.currentTime += 1;
         }
                    
