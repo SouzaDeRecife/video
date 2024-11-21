@@ -174,13 +174,13 @@ setInterval(newtime, 1000)
 
 <div class= conteiner>
 <div class= botoesclasse display= block>
-        <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
-        <button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button>
-        <button class= botao type="button" onclick="stop()"><img src= "stop.png" height= "20px" padding: 5px></button>
-<button class= botao type="button" onclick="inc()"><img src= "FF.png" height= "20px" padding: 5px></button>
-<button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
-<button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
-    <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
+        <button class= botao type="button" onclick="play2()"><img src= "play.png" height= "20px"></button>
+        <button class= botao type="button" onclick="pause2()"><img src= "Pause.png" height= "20px" padding= 5px></button>
+        <button class= botao type="button" onclick="stop2()"><img src= "stop.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="inc2()"><img src= "FF.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="dec2()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="retroceder2()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
+    <button class= botao type="button" onclick="avancar2()"><img src= "avancar.png" height= "20px" padding: 5px></button>
 </div>
 </div>
 </div>
@@ -208,6 +208,35 @@ setInterval(newtime, 1000)
             video.currentTime -= 1;
         }
         function avancar(){
+            video.currentTime += 1;
+        }
+                   
+        </script>
+
+        <script>
+        var video;
+        video= document.getElementById("vid");
+        
+        function play2(){
+        video.play();
+        }
+        function pause2(){
+        video.pause();
+    }
+        function stop2(){
+            video.pause();
+            video.currentTime= 0;
+        }
+        function inc2(){
+            video.playbackRate += 0.10;
+    }
+            function dec2(){
+            video.playbackRate -= 0.10;
+    }
+        function retroceder2(){
+            video.currentTime -= 1;
+        }
+        function avancar2(){
             video.currentTime += 1;
         }
                    
