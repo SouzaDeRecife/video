@@ -8,12 +8,10 @@
 
 
 <style>
-* {
+*    {
     margin: 0;
     padding: 0;
-        
-    }
-
+     }
 
 .clock {
     background-color: black;
@@ -32,6 +30,7 @@
 }
 }
 }
+
 .titulo {
     background-color: black;
     height: 100vh;
@@ -42,21 +41,14 @@
     flex-direction: column;
 }
 
-
 .titulo strong {
     color: blueviolet;
     height: 50vh;
 }
 
-.relogiodigital {
-   margin: 10px;     
-}
-
-
 a:link{
     text-decoration: none;
     color: blueviolet;
-    
 }
 
 
@@ -65,36 +57,42 @@ a:hover{
     color: black;
 }
 
-
 .somdobotao {
     transition: all 3s linear;
 }
+
 .conteinerdosbotoes {
     display: flex;
     justify-content: 5px;
     
     }
 .botao {
-padding: 5px;
+    padding: 5px;
 }
+
 .botoesclasse {
     margin: 10px;
     padding: 10px;
 }
+
 .interno {
     background: yellow;
 }
+
 .texto {
     background: yellow;
 }
+
 .fundobotao {
     background: black;
     margin: 0px;
 }
+
 .navegar {
     background: yellow;
     height: 150vh;
 }
+
 .vid {
     poster: "procurado.png"
 
@@ -167,11 +165,15 @@ setInterval(newtime, 1000)
 <div class="titulo">
             <h2>Powered by <strong>Feitosa de Souza</strong></h2>
             <br></br>
-    <video id="vid" width= 200px poster= "procurado.png">
+</div>
+
+<div class= devideo>
+<video id="vid" width= 200px poster= "procurado.png">
             <source src="km_20241110_720p_30f_20241110_182722.mp4">
             <poster= "procurado.png">
             poster= "procurado.png"
-    </video>
+</video>
+</div>
 
 <div class= conteinerdosbotoes>
 
@@ -183,8 +185,6 @@ setInterval(newtime, 1000)
     <button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
     <button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
     <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
-</div>
-
 </div>
 
 </div>
@@ -216,14 +216,14 @@ setInterval(newtime, 1000)
         }
 </script>
 
-<div class="titulo">
+
     <video id="vid" width= 200px poster= "procurado.png">
             <source src="km_20241110_720p_30f_20241110_182722.mp4">
             <poster= "procurado.png">
             poster= "procurado.png"
     </video>
 
-<div class= conteiner>
+<div class= conteinerdosbotoes>
 
 <div class= botoesclasse display= block>
     <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
