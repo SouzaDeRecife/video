@@ -8,10 +8,12 @@
 
 
 <style>
-*    {
-    margin: 0;
-    padding: 0;
-     }
+* {
+        margin: 0;
+        padding: 0;
+        
+    }
+
 
 .clock {
     background-color: black;
@@ -24,83 +26,96 @@
     font-size: 50px;
     span:not(:last-child):after {
     content: ':';
+    color: white;
     margin-left: 25px;
     span::after {
     content: ':';
 }
 }
-}
 
+
+}
 .titulo {
     background-color: black;
-    height: 40vh;
+    height: 100vh;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
 }
+
 
 .titulo strong {
     color: blueviolet;
     height: 50vh;
 }
-ggg
-.botao {
-    padding: 5px;
+
+.relogiodigital {
+   margin: 10px;     
 }
+
 
 a:link{
     text-decoration: none;
     color: blueviolet;
+    
 }
+
 
 a:hover{
     text-decoration: none;
     color: black;
 }
 
-.calculadorapp {
+
+.somnobotao {
     transition: all 3s linear;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-
 }
-
+.conteiner {
+display: flex;
+justify-content: 5px;
+    
+    }
+.botao {
+padding: 5px;
+}
+.botoesclasse {
+    margin: 10px;
+    padding: 10px;
+}
 .interno {
-    background: yellow;
+background: yellow;
 }
-
 .texto {
-    background: yellow;
+background: yellow;
 }
-
-.fundobotao {
-    background: black;
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.fundobotaosom {
+background: black;
+margin: 0px;
 }
-
 .navegar {
-    background: yellow;
-    height: 150vh;
+background: yellow;
+height: 80vh;
 }
-
+.vid {
+    poster= "procurado.png";
+}
+    
+#vid {
+    poster= "procurado.png";
+    }
 .login {
     color: white;
     font-family: arial;
     background-color: rgba(0, 0, 0, 0.2);
     top: 2300px;
     left: 50%;
+    transform: translate(-50%, -50%)
     padding: 15px;
     border-radius: 15px;
-    margin: 30px;
-    margin-right: 15px;
+    margin: 15px;
     
 .name {
     padding: 15px;
@@ -109,42 +124,20 @@ a:hover{
     font-size: 15px;
     
 }
-
-.pass {
-    padding: 15px;
-    border: none;
-    outline: none;
-    font-size: 15px
-}
-
 .send {
-    background-color: dodgerblue;
+    background-color: dogerblue;
     border: none;
     padding: 15px;
     width: 100%;
     border-radius: 10px;
     color: white;
     font-size: 15px;
+    
 }
+</style>
 
-.table, th, td {
-border: 1 px solid black;
-}
 
-.table, th, td {
-border: 1 px solid black;
-border-collapse: collapse;
-}
-
-.th {
-    text-align: center;
-}
-
-th, td {
-    padding: 15px;
-}
 <body>
-
 <div class="clock">
         <span id="hours">00</span>
         <span id="minutes">00</span>
@@ -170,54 +163,39 @@ newtime()
 setInterval(newtime, 1000)
 </script>
 
+
 <div class="titulo">
-            <h2>Powered by <strong>Feitosa de Souza</strong></h2>
-            <br></br>
+<h2>Powered by <strong>Feitosa de Souza</strong></h2>
+
+<br></br>
+
+
+<video id="vid" width= 200px poster= "procurado.png">
+
+    <source src="km_20241110_720p_30f_20241110_182722.mp4">
+<poster= "procurado.png">
+    poster= "procurado.png"
+</video>
+
+<div class= conteiner>
+<div class= botoesclasse display= block>
+        <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
+        <button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button>
+        <button class= botao type="button" onclick="stop()"><img src= "stop.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="inc()"><img src= "FF.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
+    <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
+
+</div>
+</div>
 </div>
 
-<div class= devideo>
-<video id="vid1" width= 150px poster= "procurado.png">
-            <source src="km_20241110_720p_30f_20241110_182722.mp4">
-</video>
 
-<video id="vid2" width= 150px poster= "procurado.png">
-            <source src="km_20241110_720p_30f_20241110_182722.mp4">
-</video>
 
-<video id="vid2" width= 150px poster= "procurado.png">
-            <source src="km_20241110_720p_30f_20241110_182722.mp4">
-</video>
-
-<video id="vid2" width= 150px poster= "procurado.png">
-            <source src="km_20241110_720p_30f_20241110_182722.mp4">
-</video>
-</div>
-
-<table>
-    <tr>
-            <td><video class= tabela type= "video" width= 150px><source src="km_20241110_720p_30f_20241110_182722.mp4"></video></td>
-            <td><video class= tabela type= "video" width= 150px><source src="km_20241110_720p_30f_20241110_182722.mp4"></video></td>
-            <td><video class= tabela type= "video" width= 150px><source src="km_20241110_720p_30f_20241110_182722.mp4"></video></td>
-            <td><video class= tabela type= "video" width= 150px><source src="km_20241110_720p_30f_20241110_182722.mp4"></video></td>
-    </tr>
-</table>
-    
-<div class= controle>
-<table>
-    <tr>
-    <td><button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px" padding= 5px></button></td>
-    <td><button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button></td>
-    <td><button class= botao type="button" onclick="stop()"><img src= "stop.png" height= "20px" padding: 5px></button></td>
-    <td><button class= botao type="button" onclick="inc()"><img src= "FF.png" height= "20px" padding: 5px></button></td>
-    <td><button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button></td>
-    <td><button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button></td>
-    <td><button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button></td>
-    </tr>
-</table>
-</div>
-<script>
+    <script>
         var video;
-        video= document.getElementById("vid1");
+        video= document.getElementById("vid");
         
         function play(){
         video.play();
@@ -243,23 +221,76 @@ setInterval(newtime, 1000)
         }
 </script>
 
+    <div class="titulo">
+<video id="vid" width= 200px poster= "procurado.png">
+
+    <source src="km_20241110_720p_30f_20241110_182722.mp4">
+<poster= "procurado.png">
+    poster= "procurado.png"
+</video>
+
+<div class= conteiner>
+<div class= botoesclasse display= block>
+        <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
+        <button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button>
+        <button class= botao type="button" onclick="stop()"><img src= "stop.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="inc()"><img src= "FF.png" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
+<button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
+    <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
 </div>
 </div>
+</div>
+        
+  
+
+        <script>
+        var video;
+        video= document.getElementById("vid");
+        
+        function play(){
+        video.play();
+        }
+        function pause(){
+        video.pause();
+    }
+        function stop(){
+            video.pause();
+            video.currentTime= 0;
+        }
+        function inc(){
+            video.playbackRate += 0.10;
+    }
+            function dec(){
+            video.playbackRate -= 0.10;
+    }
+        function retroceder(){
+            video.currentTime -= 1;
+        }
+        function avancar(){
+            video.currentTime += 1;
+        }
+                   
+        </script>
 
 <div class= interno>
-        <br></br>
-    <a href="#Desce">Desce pro fim da página.</a>
-        <br></br>
-    <a href="#segunda">Descer para a segunda explicação sobre link.</a>
-        <br></br>
+<br></br>
+<a href="#Desce">Desce pro fim da página.</a>
+<br></br>
+
+    
+<a href="#segunda">Descer para a segunda explicação sobre link.</a>
+<br></br>
 </div>
     
 <div class= texto>
-    <h1>Aplicativo Calculador</h1>
+<h1>Aplicativo Calculadora</h1>
 </div>
 
-<div class: fundobotao>
-<a href="https://souzaderecife.github.io/calculadora/"><button type= "button" onclick= "audio.play();"><img src="calculadora2.png" alt=""></button></a>
+<div class= fundobotaosom>
+
+<a href="https://souzaderecife.github.io/calculadora/"><button id="somdobotao" onclick="audio.play();"><img src="calculadora2.png" height="300px"></button></a>
+
 </div>
 <script type="text/javascript">
     const audio = new Audio();
@@ -267,9 +298,20 @@ setInterval(newtime, 1000)
 </script>
 
 
+<audio id="meuaudio">
+<source src="depositphotos_633223380-track-sound-effect-space-laser-gun.mp3" type="audio/mpeg">
+</audio>
+<script>
+    function playAudio() {
+        let x = document.getElementById("meuaudio");
+        x.play();
+    }
+</script>
+
+
 <div class="navegar">
-    <h2><a name="Desce">Sobe.</a></h2>
-        Esse link é para navegação dentro da página.
+<h2><a name="Desce">Sobe.</a></h2>
+Esse link é para navegação dentro da página.
 
 <div class= login>
     <h1>Login</h1>
@@ -277,15 +319,30 @@ setInterval(newtime, 1000)
         <br><br>
     <input class= "pass" type= "password" placeholder= "senha">
         <br><br>
-    <button class= "send">Enviar</button>
-</div>
-        
-        <br></br>
-    <h2><a name="segunda">Sobe.</a></h2>
-        Essa é a segunda explicação sobre link.
-
+    <button class= send>Enviar</button>
+    
 </div>
 
+<br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+<h2><a name="segunda">Sobe.</a></h2>
+Essa é a segunda explicação sobre link.
+
+<div class= login2>
+    <h1>Login</h1>
+    <imput type= "text" placeholder= "nome">
+        <br><br>
+    <imput type= "password" placeholder= "senha">
+        <br><br>
+    <button>Enviar</button>
+    
+</div>
+</div>
 </body>
-
 </html>
