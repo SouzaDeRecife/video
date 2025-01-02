@@ -10,11 +10,16 @@
 <style>
 * {
         margin: 0;
-        padding: 0;
-        
-    }
-
-
+        padding: 0;   
+}
+a:link{
+    text-decoration: none;
+    color: blueviolet;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
 .clock {
     background-color: black;
     color: white;
@@ -32,8 +37,6 @@
     content: ':';
 }
 }
-
-
 }
 .titulo {
     background-color: black;
@@ -43,33 +46,14 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
-
-
 .titulo strong {
     color: blueviolet;
     height: 50vh;
 }
-
 .relogiodigital {
    margin: 10px;     
 }
-
-
-a:link{
-    text-decoration: none;
-    color: blueviolet;
-    
-}
-
-
-a:hover{
-    text-decoration: none;
-    color: black;
-}
-
-
 .somnobotao {
     transition: all 3s linear;
 }
@@ -99,7 +83,6 @@ margin: 0px;
 background: yellow;
 height: 80vh;
 }
-
 .login {
     color: white;
     font-family: arial;
@@ -110,13 +93,11 @@ height: 80vh;
     padding: 15px;
     border-radius: 15px;
     margin: 15px;
-    
 .name {
     padding: 15px;
     border: none;
     outline: none;
     font-size: 15px;
-    
 }
 .send {
     background-color: dogerblue;
@@ -125,8 +106,7 @@ height: 80vh;
     width: 100%;
     border-radius: 10px;
     color: white;
-    font-size: 15px;
-    
+    font-size: 15px;    
 }
 </style>
 
@@ -157,14 +137,11 @@ newtime()
 setInterval(newtime, 1000)
 </script>
 
-
 <div class="titulo">
 <h2>Powered by <strong>Feitosa de Souza</strong></h2>
-
 <br></br>
 
-
-<video id="vid" width= 200px poster= "procurado.png">
+<video id="vid" width= 200px>
 
     <source src="km_20241110_720p_30f_20241110_182722.mp4">
 <poster= "procurado.png">
