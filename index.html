@@ -50,20 +50,15 @@ a:hover{
     color: blueviolet;
     height: 30vh;
 }
-.somnobotao {
-    transition: all 3s linear;
-}
-.conteiner {
-display: flex;
-justify-content: 5px;
-    
-    }
-.botao {
-padding: 5px;
-}
 .botoesclasse {
     margin: 10px;
     padding: 10px;
+}
+.somnobotao {
+    transition: all 3s linear;
+}
+.botao {
+padding: 5px;
 }
 .interno {
 background: yellow;
@@ -105,8 +100,6 @@ height: 80vh;
     font-size: 15px;    
 }
 </style>
-
-
 <body>
 <div class="clock">
         <span id="hours">00</span>
@@ -135,13 +128,13 @@ setInterval(newtime, 1000)
 
 <div class="titulo">
 <h2>Powered by <strong>Feitosa de Souza</strong></h2>
-<br></br>
 </div>
+
 <video id="vid" width= 200px poster= "procurado.png">
     <source src="km_20241110_720p_30f_20241110_182722.mp4">
 </video>
 
-<div class= conteiner>
+
 <div class= botoesclasse display= block>
         <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
         <button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button>
@@ -150,11 +143,7 @@ setInterval(newtime, 1000)
         <button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
         <button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
         <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
-
-
 </div>
-</div>
-
     <script>
         var video;
         video= document.getElementById("vid");
@@ -188,49 +177,6 @@ setInterval(newtime, 1000)
     <source src="km_20241110_720p_30f_20241110_182722.mp4">
 </video>
 
-<div class= conteiner>
-<div class= botoesclasse display= block>
-        <button class= botao type="button" onclick="play()"><img src= "play.png" height= "20px"></button>
-        <button class= botao type="button" onclick="pause()"><img src= "Pause.png" height= "20px" padding= 5px></button>
-        <button class= botao type="button" onclick="stop()"><img src= "stop.png" height= "20px" padding: 5px></button>
-        <button class= botao type="button" onclick="inc()"><img src= "FF.png" height= "20px" padding: 5px></button>
-        <button class= botao type="button" onclick="dec()"><img src= "Rew.jpg" height= "20px" padding: 5px></button>
-        <button class= botao type="button" onclick="retroceder()"><img src= "Retroceder.jpg" height= "20px" padding: 5px></button>
-        <button class= botao type="button" onclick="avancar()"><img src= "avancar.png" height= "20px" padding: 5px></button>
-</div>
-</div>
-        
-<script>
-        var video;
-        video= document.getElementById("vid");
-        
-        function play(){
-        video.play();
-        }
-        function pause(){
-        video.pause();
-        }
-        function stop(){
-            video.pause();
-            video.currentTime= 0;
-        }
-        function inc(){
-            video.playbackRate += 0.10;
-        }
-            function dec(){
-            video.playbackRate -= 0.10;
-        }
-        function retroceder(){
-            video.currentTime -= 1;
-        }
-        function avancar(){
-            video.currentTime += 1;
-        }
-                   
-        </script>
-
-<div class= interno>
-<br></br>
 <a href="#Desce">Desce pro fim da página.</a>
 <br></br>
 
