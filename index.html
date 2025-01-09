@@ -38,6 +38,26 @@ a:hover{
 }
 }
 }
+
+.clockHeader {
+    width: 100%;
+    background-color: black;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-size: 50px;
+    span:not(:last-child):after {
+    content: ':';
+    color: white;
+    margin-left: 25px;
+    span::after {
+    content: ':';
+}
+}
+}
 .titulo {
     width: 100%;
     background-color: black;
@@ -124,8 +144,11 @@ align-items: center;
 </style>
 <body>
     
-<header>
+<header class= "clockHeader">
     <!-- cabeçalho -->
+    <span id="hours">00</span>
+    <span id="minutes">00</span>
+    <span id="seconds">00</span
 </header>
 
 <nav>
